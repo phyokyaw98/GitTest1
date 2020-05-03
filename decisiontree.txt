@@ -1,0 +1,8 @@
+from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier(n_estimators=10, random_state=0)
+rf.fit(X_train, y_train)
+rf.score(X_test, y_test)
+from sklearn.tree import DecisionTreeClassifier
+tree = DecisionTreeClassifier(max_depth=7, random_state=0)
+tree.fit(X_train, y_train)
+tree.score(X_test, y_test)

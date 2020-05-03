@@ -1,0 +1,5 @@
+tree = DecisionTreeClassifier(max_depth=7, random_state=0)
+tree.fit(X, y)
+tree.score(X, y)
+%matplotlib inline
+pd.Series(tree.feature_importances_, index=X.columns).plot.barh(figsize=(18,7));
